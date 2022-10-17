@@ -1,0 +1,33 @@
+<h3>{{title}}</h3>
+<div class="timesheetlist">
+    <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+                <th> Date</th>
+                <th> Trainer Name</th>
+                <th> Hours</th>
+                <th>Mode of Training</th>
+                <th></th>
+            </tr>
+
+          </thead>
+          <tbody>
+           
+            <tr *ngFor='let Approve_list of ApproveList'>
+                   
+              <td>{{Approve_list.tsDate }}</td>
+              <td>{{Approve_list.tsTrainerName}}</td>
+              <td>{{Approve_list.tsHour}}</td>
+              <td>{{Approve_list. tsTraining_Mod}}</td>
+                 
+              <td>
+                  <!-- <input type="checkbox" id="approve" > --><button class="btn btn-primary">Approve</button>
+                </td>   
+          </tr>
+          
+    </tbody>
+        </table>
+    </div>
+
+</div>

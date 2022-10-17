@@ -1,0 +1,34 @@
+.maindiv{
+    /* display:flex; */
+    flex-direction: row;
+    width:100%;
+    align-content:center;
+    text-decoration: none;
+   
+}
+.leftdiv{
+    /* background-color:wheat; */
+    width:20%;
+    height:480px;
+    /* border-radius:10px; */
+    padding:20px;
+    margin-left:2%;
+    background-color:silver; 
+}
+.rightdiv{
+    
+    background-color:silver; 
+    width:70%;
+    height:800px;
+    /* border-radius:10px; */
+    padding:20px;
+    margin-left:10%;
+    transform: translate(20%,-60%);
+  
+}
+a{
+    color: black;}
+
+footer{
+   
+}    

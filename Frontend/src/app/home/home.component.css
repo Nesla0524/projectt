@@ -1,0 +1,26 @@
+.centered {
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1{
+    color: white;
+  }
+  h3{
+    text-align: start;
+  }
+  h5{
+    color: white;
+  }
+   .col{
+  padding: 7px;
+ 
+}
+p{
+  text-align: start;
+}
+.cont{
+  background-color:floralwhite;
+}

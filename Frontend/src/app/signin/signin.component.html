@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-4">
+          <h1 class="font-weight-dark text-dark ml-5 mr-5">Sign In</h1>
+       </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+<form #tDetails="ngForm" novalidate name="myForm" (ngSubmit)="singin()">
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input [(ngModel)]="user.Uemail" type="email" class="form-control" name="umail"   #uemail="ngModel" required> 
+        <span class="text-danger" *ngIf="uemail.touched && uemail.errors?.['required']">
+            *Required!
+          </span>
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input [(ngModel)]="user.Upassword" type="password" class="form-control" name="uPassword"  #Upassword="ngModel" required minlength="8">
+        <span class="text-danger" *ngIf="Upassword.touched && Upassword.errors?.['required']">
+            *Required!
+          </span>
+          <span class="text-danger" *ngIf="Upassword.touched && Upassword.errors?.['minlength']">
+            *8 Character Minimum!
+          </span>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary"  [disabled]= "!tDetails.valid">Sign In</button>
+      </div>
+</form>
+    <div>
+
+    <input type="checkbox">
+    <label>Remember me</label>
+    <a routerLink="/forgot">Forgot Password?</a>
+</div>
+
+
+  <h5>Create an account 
+    <a routerLink="/signup">Sign Up</a> 
+    </h5>
+  </div> 
+</div>
+
